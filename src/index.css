@@ -238,3 +238,18 @@
   font-size: 1.2rem;
   font-weight: bold;
 }
+
+/* media query */
+
+@media (max-width:662px){
+
+  .pokemon-details section {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .pokemon-details section article {
+    display: flex;
+    flex-direction: column;
+  }
+}
