@@ -11,6 +11,10 @@ function Info() {
         - This website does not look good on mobile but its still responsive
       </h2>
       <br />
+    <h2>
+        - Reload the site if pokemons arent fetched properly
+      </h2>
+      <br />
       <h2>
         - If you want to get all pokemons after searching , click on the
         "POKEDEX" logo at the top left
