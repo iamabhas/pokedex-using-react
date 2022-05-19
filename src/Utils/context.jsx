@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useCallback } from "react";
+import React, { useState, useEffect } from "react";
 
 const url = "https://pokeapi.co/api/v2/pokemon/?limit=151&offset=0";
 
