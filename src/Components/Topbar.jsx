@@ -17,22 +17,32 @@ function Topbar() {
           POKEDEX
         </h1>
         <section>
-          <a
-            href="#"
+          <button
+            className="info-btn"
             onClick={() => {
               navigate("/info");
             }}
           >
-            <img src="https://img.icons8.com/material-outlined/60/000000/info--v1.png" />
-          </a>
+            <img
+              src="https://img.icons8.com/material-outlined/60/000000/info--v1.png"
+              alt="error"
+            />
+          </button>
           <a
             href="https://github.com/iamabhas/pokedex-using-react"
             target="_blank"
+            rel="noreferrer"
           >
-            <img src="https://img.icons8.com/ios-glyphs/60/000000/github.png" />
+            <img
+              src="https://img.icons8.com/ios-glyphs/60/000000/github.png"
+              alt="error"
+            />
           </a>
-          <a href="https://pokeapi.co/" target="_blank">
-            <img src="https://img.icons8.com/color/60/000000/pokeball-2.png" />
+          <a href="https://pokeapi.co/" target="_blank" rel="noreferrer">
+            <img
+              src="https://img.icons8.com/color/60/000000/pokeball-2.png"
+              alt="error"
+            />
           </a>
         </section>
       </div>
