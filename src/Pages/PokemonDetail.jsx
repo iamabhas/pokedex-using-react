@@ -3,18 +3,10 @@ import Loading from "../Components/Loading";
 import { useParams, useNavigate } from "react-router-dom";
 
 function PokemonDetail() {
-  const [pokemon, setPokemon] = React.useState([]);
+  const [pokemon, setPokemon] = React.useState(null);
   const [loading, setLoading] = React.useState(true);
   let navigate = useNavigate();
   const { id } = useParams();
-
-  const fetchPokemon = async () => {
-    const res = await fetch(`https://pokeapi.co/api/v2/pokemon/${id}`);
-    const data = await res.json();
-    setPokemon(data);
-    console.log(data);
-    setLoading(false);
-  };
 
   const upperCaseFirstLetter = (word) => {
     const newWord = word.charAt(0).toUpperCase() + word.slice(1);
@@ -22,8 +14,15 @@ function PokemonDetail() {
   };
 
   React.useEffect(() => {
+    const fetchPokemon = async () => {
+      const res = await fetch(`https://pokeapi.co/api/v2/pokemon/${id}`);
+      const data = await res.json();
+      setPokemon(data);
+      setLoading(false);
+    };
     fetchPokemon();
   }, [id]);
+
   if (loading) {
     return <Loading />;
   }
