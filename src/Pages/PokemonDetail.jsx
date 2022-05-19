@@ -23,7 +23,7 @@ function PokemonDetail() {
 
   React.useEffect(() => {
     fetchPokemon();
-  }, [id,fetchPokemon]);
+  }, [id]);
   if (loading) {
     return <Loading />;
   }
