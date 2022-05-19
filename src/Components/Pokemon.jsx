@@ -12,7 +12,7 @@ export const Pokemon = ({ id, name, sprites, types }) => {
     <>
       <div className={`pokemon-wrapper ${types[0].type.name}`}>
         <div>{upperCaseFirstLetter(name)}</div>
-        <img src={sprites.other.dream_world.front_default} />
+        <img src={sprites.other.dream_world.front_default} alt={name} />
         <span>Type: {upperCaseFirstLetter(types[0].type.name)}</span>
         <button
           className="btn"
